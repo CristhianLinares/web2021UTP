@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Encuesta</title>
+    </head>
+    <body>
+        <div id="contenedor">
+
+            <h2 id="encabezado">Cuestionario de Cine</h2>
+            <form id="formulario1" name="formulario1" method="post" action="data">
+                <fieldset id="datos personales">
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" name="nombre" id="nombre"><br>
+                    <label for="apellidos">apellidos:</label><br>
+                    <input type="text" name="apellidos" id="apellidos"><br>
+                    <label for="dni">DNI:</label><br>
+                    <input type="text" name="dni" id="dni" maxlength="9"><br>
+                    <label for="edad">Edad:</label><br>
+                    <input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+                    <label for="sexo">Sexo:</label><br>
+                    <select id="sexo" name="sexo">
+                        <option value="X" selected="selected">...</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </fieldset>
+                <fieldset id="mejor pelicula">
+                    <legend>Mejor Pelicula</legend>
+                    <input type="radio" name="pelicula" value="1">El Padrino<br>
+                    <input type="radio" name="pelicula" value="2" checked="checked">Crepusculo<br>
+                    <input type="radio" name="pelicula" value="3">Los odiosos<br>
+                    <input type="radio" name="pelicula" value="4">Anatomia de un asesino<br>
+                </fieldset>
+                <fieldset id="grupo opinion">
+                    <legend>Tu opinion</legend>
+                    <textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+                </fieldset>
+                <br>
+                <input type="reset" value="Borrar formulario">&nbsp;&nbsp;&nbsp;&nbsp;
+            </form>
+        </div>
+
+        
+        <!--<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2431_RC04/embed_loader.js"></script>-->
+        <footer>
+            <p>Propiedad de Biill Gates</p>
+            <p>Correo electronico: <a href="mailto:someoneo@example.com">
+                billgates@example.com</a>.</p>
+        </footer>
+    </body>
+</html>
